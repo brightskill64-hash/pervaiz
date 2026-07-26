@@ -11,6 +11,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -20,14 +21,16 @@ background:#f5f5f5;
 header{
 background:#0b5d2a;
 color:white;
-padding:20px;
 text-align:center;
+padding:20px;
 }
 
 nav{
 background:#094d23;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
@@ -37,43 +40,40 @@ margin:15px;
 font-weight:bold;
 }
 
-.hero{
-padding:80px 20px;
+nav a:hover{
+color:gold;
+}
+
+section{
+padding:60px 20px;
 text-align:center;
-background:white;
 }
 
-.hero h1{
-font-size:42px;
-color:#0b5d2a;
-}
-
-.hero p{
-margin-top:15px;
-font-size:20px;
+.hero img{
+width:100%;
+max-width:900px;
+height:450px;
+object-fit:cover;
+border-radius:10px;
+margin:20px auto;
+display:block;
 }
 
 .btn{
 display:inline-block;
-margin-top:25px;
 background:#25D366;
 color:white;
-padding:15px 30px;
+padding:12px 25px;
+border-radius:6px;
 text-decoration:none;
-border-radius:8px;
-font-size:18px;
-}
-
-.products{
-padding:50px;
-text-align:center;
+margin-top:20px;
 }
 
 .card{
 background:white;
+max-width:400px;
 margin:20px auto;
 padding:20px;
-max-width:400px;
 border-radius:10px;
 box-shadow:0 0 10px #ccc;
 }
@@ -83,12 +83,10 @@ background:#0b5d2a;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
 }
 </style>
 
 </head>
-
 <body>
 
 <header>
@@ -97,42 +95,55 @@ margin-top:40px;
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-<h1>Welcome to Pervaiz Rice Export</h1> <img src="images (5).jfif" alt="Rice Banner" style="width:100%; height:450px; object-fit:cover; border-radius:10px;">
+<section id="home" class="hero">
+<h1>Welcome to Pervaiz Rice Export</h1>
+
+<img src="images (5).jfif" alt="Rice Banner">
+
 <p>We export premium quality Pakistani rice all over the world.</p>
 
-<a class="btn" href="https://wa.me/923001234567">WhatsApp Us</a>
+<a class="btn" href="https://wa.me/923416163187">WhatsApp Us</a>
 </section>
 
-<section class="products">
+<section id="about">
+<h2>About Us</h2>
+<p>Pervaiz Rice Export exports premium Pakistani Basmati and Non-Basmati rice worldwide with quality and trust.</p>
+</section>
 
+<section id="products">
 <h2>Our Products</h2>
 
 <div class="card">
 <h3>Super Basmati Rice</h3>
-<p>High quality long grain rice.</p>
+<p>Premium long grain rice.</p>
 </div>
 
 <div class="card">
 <h3>1121 Basmati Rice</h3>
-<p>Best export quality rice.</p>
+<p>High quality export rice.</p>
 </div>
 
 <div class="card">
 <h3>IRRI-6 Rice</h3>
-<p>Premium non-basmati rice.</p>
+<p>Best quality non-basmati rice.</p>
 </div>
 
 </section>
 
+<section id="contact">
+<h2>Contact Us</h2>
+<p><strong>WhatsApp:</strong> 03416163187</p>
+<p><strong>Email:</strong> imran.0092@gmail.com</p>
+</section>
+
 <footer>
-© 2026 Pervaiz Rice Export
+<p>© 2026 Pervaiz Rice Export. All Rights Reserved.</p>
 </footer>
 
 </body>
