@@ -5,38 +5,141 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chenab Rice Export</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f7f7;
+color:#333;
 }
 
 header{
-background:#0b5d2a;
-padding:20px 60px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:18px 70px;
+background:rgba(0,0,0,.75);
+z-index:999;
 }
 
 .logo{
-color:white;
+color:#fff;
 font-size:30px;
-font-weight:bold;
+font-weight:700;
+}
+
+.logo span{
+color:#FFD54F;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 margin-left:25px;
-font-size:18px;
+font-size:17px;
+transition:.3s;
 }
 
 nav a:hover{
-color:gold;
+color:#FFD54F;
 }
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:850px;
+color:white;
+}
+
+.hero-content h1{
+font-size:64px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:#2E7D32;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#1B5E20;
+}
+
+.btn2{
+display:inline-block;
+padding:16px 40px;
+background:#FFD54F;
+color:black;
+text-decoration:none;
+border-radius:8px;
+margin:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn2:hover{
+background:#FFC107;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+}
+
 </style>
 
 </head>
@@ -46,18 +149,38 @@ color:gold;
 <header>
 
 <div class="logo">
-🌾 Chenab Rice Export
+🌾 <span>Chenab</span> Rice Export
 </div>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Products</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Premium Pakistani Basmati Rice Exporter</h1>
+
+<p>
+From the fertile fields of Punjab to customers around the world.
+We supply premium quality Basmati Rice with international standards,
+competitive prices and reliable worldwide shipping.
+</p>
+
+<a href="#" class="btn">Explore Products</a>
+
+<a href="#" class="btn2">Request Quote</a>
+
+</div>
+
+</section>
 
 </body>
 </html>
